@@ -22,10 +22,21 @@ rightEl.addEventListener("mouseleave", () => {
 
 
 // Button click sound effect
-const sound = new Audio("assets/sounds/click.mp3");
-
 document.querySelectorAll(".btn").forEach(btn => {
   btn.addEventListener("click", () => {
+    const sound = new Audio("assets/sounds/click.mp3");
     sound.play();
   });
+});
+
+
+// Buy button redirect
+const buttons = document.querySelectorAll(".btn");
+
+buttons[0].addEventListener("click", () => {
+  window.open("https://www.apple.com", "_blank");
+});
+
+buttons[1].addEventListener("click", () => {
+  window.open("https://www.samsung.com", "_blank");
 });
