@@ -8,6 +8,14 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+/* PRICE STYLE */
+.price {
+  font-size: 28px;
+  color: yellow;
+  text-shadow: 0 0 10px yellow;
+  margin: 10px 0;
+}
+
 h1 {
   font-size: 100px;
   color: aliceblue;

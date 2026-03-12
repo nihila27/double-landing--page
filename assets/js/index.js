@@ -1,3 +1,4 @@
+// Hover split effect
 const containerEl = document.querySelector(".container");
 
 const leftEl = document.querySelector(".left");
@@ -17,4 +18,14 @@ rightEl.addEventListener("mouseenter", () => {
 
 rightEl.addEventListener("mouseleave", () => {
   containerEl.classList.remove("active-right");
+});
+
+
+// Button click sound effect
+const sound = new Audio("assets/sounds/click.mp3");
+
+document.querySelectorAll(".btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    sound.play();
+  });
 });
